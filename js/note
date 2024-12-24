@@ -1,0 +1,172 @@
+// axios
+// get all blogs
+
+// let URL = "http://localhost:3000/blogs";
+
+// async function showBlog() {
+//   try {
+//     const {
+//       data: { blogs },
+//     } = await axios.get("http://localhost:3000/blogs");
+//     console.log(blogs);
+
+//     const displayBlog = blogs.for((blog) => {
+//       console.log(blog);
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// showBlog();
+
+// async function getUser() {
+//   try {
+//     const response = await axios.get("http://localhost:3000/blogs");
+
+//     console.log(response);
+//     const allBlog = response.forEach((item) => {
+//       console.log(item.title);
+//     });
+//     console.log(allBlog);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+// getUser();
+
+// working
+// async function getUser() {
+//   try {
+//     const response = await axios.get("http://localhost:3000/blogs");
+
+//     console.log(response);
+
+//     // Check if 'blogs' property exists and is an array
+//     if (Array.isArray(response.data.blogs)) {
+//       response.data.blogs.forEach((item) => {
+//         console.log(item.title);
+//       });
+//     } else {
+//       console.error("'blogs' property is not an array:", response.data.blogs);
+//     }
+//   } catch (error) {
+//     console.error(error.response);
+//   }
+// }
+
+// getUser();
+
+// ///////////////?
+// function displayImages() {
+//   const displayImage = dataFile
+//     .map(function (data) {
+//       return ` <div class="box-home-container-right section2-container-left ">
+
+//       <div class="container-text-image-left">
+//           <div class="image-box-home-right image-container-left">
+//               <img src="./images/sct-2-1.jpg" alt="" class="img-home-2 img-sect2-left">
+//           </div>
+//           <div class="text-box-home-left">
+
+//               <div class="vertical-text-left">
+//                   <div></div>
+//                   <h2>Place holder title</h2>
+
+//               </div>
+//               <div class="normal-text-left ">
+//                   <h4>Title </h4>
+//                   <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. </p>
+//                   <a href="">Cta line </a>
+
+//               </div>
+//           </div>
+//       </div>
+//   </div>
+
+//   <!-- right -->
+
+//   <div class="box-home-container-right section2-container-right ">
+
+//       <div class="container-text-image-right">
+//           <div class="image-box-home-right image-container-right">
+//               <img src="./images/sct-2-2jpg.jpg" alt="" class="img-home-2 img-sect2-right">
+//           </div>
+//           <div class="text-box-home-right">
+
+//               <div class="vertical-text-right">
+//                   <div></div>
+//                   <h2>Place holder title</h2>
+//               </div>
+//               <div class="normal-text-right ">
+//                   <h4>Title </h4>
+//                   <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. </p>
+//                   <a href="">Cta line </a>
+//               </div>
+//           </div>
+//       </div>
+//   </div>
+// `;
+//     })
+//     .join("");
+
+//   // console.log(domCenter);
+//   domCenter.innerHTML = displayImage;
+// }
+// function displayImages() {
+//   const displayImage = dataFile
+//     .map(function (data) {
+//       return ` <div class="box-home-container-right section2-container-left ">
+
+//       <div class="container-text-image-left">
+//           <div class="image-box-home-right image-container-left">
+//               <img src="./images/sct-2-1.jpg" alt="" class="img-home-2 img-sect2-left">
+//           </div>
+//           <div class="text-box-home-left">
+
+//               <div class="vertical-text-left">
+//                   <div></div>
+//                   <h2>Place holder title</h2>
+
+//               </div>
+//               <div class="normal-text-left ">
+//                   <h4>Title </h4>
+//                   <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. </p>
+//                   <a href="">Cta line </a>
+
+//               </div>
+//           </div>
+//       </div>
+//   </div>
+
+//   <!-- right -->
+
+//   <div class="box-home-container-right section2-container-right ">
+
+//       <div class="container-text-image-right">
+//           <div class="image-box-home-right image-container-right">
+//               <img src="./images/sct-2-2jpg.jpg" alt="" class="img-home-2 img-sect2-right">
+//           </div>
+//           <div class="text-box-home-right">
+
+//               <div class="vertical-text-right">
+//                   <div></div>
+//                   <h2>Place holder title</h2>
+//               </div>
+//               <div class="normal-text-right ">
+//                   <h4>Title </h4>
+//                   <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. </p>
+//                   <a href="">Cta line </a>
+//               </div>
+//           </div>
+//       </div>
+//   </div>
+// `;
+//     })
+//     .join("");
+
+//   // console.log(domCenter);
+//   domCenter.innerHTML = displayImage;
+// }
+
+// displayImages();
